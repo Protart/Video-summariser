@@ -1,0 +1,4 @@
+nltk 
+youtube_transcript_api
+punctuator
+flask
