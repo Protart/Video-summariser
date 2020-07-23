@@ -19,7 +19,7 @@ def summarize(vid_id):
     subs = YouTubeTranscriptApi.get_transcript(vid_id)
     sentences = [i['text'] for i in subs]
     text = ' '.join(sentences)
-    p = Punctuator('Demo-Europarl-EN.pcl')
+    p = Punctuator('INTERSPEECH-T-BRNN.pcl')
     text = p.punctuate(text)
 
     stopWords = set(stopwords.words("english")) 
